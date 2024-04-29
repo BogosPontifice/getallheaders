@@ -24,4 +24,6 @@ func main() {
 	for k, v := range resp.Header {
 		io.WriteString(os.Stdout, fmt.Sprintf("%s: %s\n", k, v))
 	}
+
+	fmt.Println("Response status: ", resp.Status)
 }
